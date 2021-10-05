@@ -1,0 +1,119 @@
+/*********************
+ ****** Global *******
+**********************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    background:dimgray;
+  }
+  
+  .mobile-layout {
+    width: 400px;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+  }
+  
+  .mobile-layout > * {
+    flex: 1 1 auto;
+  }
+  
+  /*********************
+   ****** Header *******
+  **********************/
+  
+  .mobile-layout-header,
+  .mobile-layout-footer {
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.1);
+    background:deeppink;
+  }
+  
+  .mobile-layout-header {
+    flex: 1.5;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .mobile-layout-title {
+    font-size: 24px;
+  }
+  
+  .mobile-layout-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    padding: 7px;
+    border-radius: 2px;
+    background: rgba(0,0,0,.2);
+  
+  }
+  
+  /*********************
+   ****** Content ******
+  **********************/
+  
+  .mobile-layout-content {
+    flex: 10;
+    padding: 30px 40px;
+    overflow-y: scroll;
+  }
+  
+  .mobile-layout-content > * {
+    margin-bottom: 10px;
+  }
+  
+  .mobile-layout-paragraph {
+    text-align: justify;
+  }
+  
+  .mobile-layout-image {
+    float: left;
+    margin: 0 10px 0 0;
+  }
+  
+  /*********************
+   ****** Footer *******
+  **********************/
+  
+  .mobile-layout-footer {
+    flex: 2;
+  }
+  
+  .mobile-layout-footer-menu {
+    height: 100%;
+  }
+  
+  .mobile-layout-footer-menu-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+  }
+  
+  .mobile-layout-footer-menu-list > * {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mobile-layout-item > * {
+    margin: 7px 0;
+  }
